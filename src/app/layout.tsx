@@ -5,8 +5,8 @@ import "@xyflow/react/dist/style.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Voice Canvas",
-  description: "A visual workspace for live agent collaboration.",
+  title: "webmcp-canvas",
+  description: "webmcp-canvas: a visual workspace for live collaboration with AI agents through WebMCP.",
 };
 
 export const viewport: Viewport = {

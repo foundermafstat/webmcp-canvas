@@ -172,7 +172,7 @@ export async function registerWebMcpTools(options: RegistrationOptions): Promise
   const definitions: ToolDefinition[] = [
     {
       name: "get_scene_summary",
-      description: "Read a bounded summary of the currently open Voice Canvas scene. No side effects.",
+      description: "Read a bounded summary of the currently open webmcp-canvas scene. No side effects.",
       inputSchema: getSceneSummaryInputSchema,
       annotations: { readOnlyHint: true },
       execute: (input) => {
@@ -190,7 +190,7 @@ export async function registerWebMcpTools(options: RegistrationOptions): Promise
     },
     {
       name: "get_object",
-      description: "Read one bounded object from the currently open Voice Canvas scene. No side effects.",
+      description: "Read one bounded object from the currently open webmcp-canvas scene. No side effects.",
       inputSchema: getObjectInputSchema,
       annotations: { readOnlyHint: true },
       execute: (input) => {
@@ -454,7 +454,7 @@ export async function registerWebMcpTools(options: RegistrationOptions): Promise
     {
       name: "set_canvas_view",
       description:
-        "Switch the current Voice Canvas UI between a clean canvas-only view and the standard editing interface. Does not change the document or history.",
+        "Switch the current webmcp-canvas UI between a clean canvas-only view and the standard editing interface. Does not change the document or history.",
       inputSchema: setCanvasViewInputSchema,
       execute: (input) => {
         if (

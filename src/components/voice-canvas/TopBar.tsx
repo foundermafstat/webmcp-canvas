@@ -28,7 +28,7 @@ export function TopBar({ documentTitle, version, webMcpState, onUndo }: TopBarPr
     <header className="top-bar">
       <div className="brand">
         <VoiceCanvasMark />
-        <strong>Voice Canvas</strong>
+        <strong>webmcp-canvas</strong>
       </div>
       <span className="header-divider" />
       <button className="document-menu" type="button" onClick={() => toggle("document")} aria-expanded={openMenu === "document"}>
